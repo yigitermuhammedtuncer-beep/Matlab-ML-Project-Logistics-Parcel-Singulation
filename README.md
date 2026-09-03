@@ -73,3 +73,21 @@ Reaching the gold-standard policy required eliminating subtle physics bugs and i
 │
 ├── All Files About Trainings.zip    # Aggregated MAT-files, training logs, and metrics
 └── Videos And Log Files.zip         # 30 FPS MP4 renders comparing policies before/after training[cite: 3]
+
+🚀 How to Run (MATLAB Reinforcement Learning Toolbox)
+Extract Final Version Complete 1.1.zip (or All Final Codes...).
+
+Open MATLAB (R2024b or later recommended with Reinforcement Learning Toolbox and Deep Learning Toolbox).
+
+Load the pre-trained agent:
+
+Matlab
+load('trainedAgent_Run11.mat');
+Run the closed-loop evaluation simulation:
+
+Matlab
+run_AMS_simulation;
+(Optional) To re-render high-resolution convergence plots from logged data without re-training:
+
+Matlab
+run('Reward_Plot.m');
